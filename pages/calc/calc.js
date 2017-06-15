@@ -1,6 +1,6 @@
 // calc.js
 // 获取应用实例
-let app = getApp()
+// let app = getApp()
 // 引入rpn.js处理计算表达式，类似eval函数
 import rpn from '../../utils/rpn.js'
 
