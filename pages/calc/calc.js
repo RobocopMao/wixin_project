@@ -1,6 +1,7 @@
-//index.js
-//获取应用实例
+// calc.js
+// 获取应用实例
 let app = getApp()
+// 引入rpn.js处理计算表达式，类似eval函数
 import rpn from '../../utils/rpn.js'
 
 Page({
@@ -57,7 +58,6 @@ Page({
 
     // 设置表达式的值
     let _val
-    // console.log(Number(val))
     if (isNaN(Number(val))) {
       if (val === '(' || val === ')' || val === '.') {
         _val = val
