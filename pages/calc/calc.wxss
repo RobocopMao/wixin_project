@@ -11,7 +11,6 @@
   padding-right: 20rpx;
 }
 .cal-result-wrapper {
-  /*height: 100rpx;*/
   text-align: right;
   line-height: 100rpx;
   font-size: 50rpx;
@@ -31,34 +30,23 @@
 .cal-formula {
   width: 100%;
   height: auto;
-  /*height: 200rpx;*/
   color: #999;
 }
 .cal-keyboard {
   display: flex;
   flex-direction: row;
-  /*height: 400rpx;*/
 }
 .cal-number {
   display: flex;
   flex-direction: row;
   flex-basis: 80%;
   flex-wrap: wrap;
-  /*justify-content: flex-start;*/
-  /*align-content: stretch;*/
 }
 .cal-number-btn {
-  /*display: block;*/
   flex-basis: 33%;
 }
 .cal-deal {
   display: flex;
   flex-basis: 20%;
   flex-direction: column;
-}
-.cal-deal-btn > button {
-  /*display: block;*/
-  /*width: 50rpx;*/
-  /*height: 50rpx;*/
-  /*border-radius: 50%;*/
 }
