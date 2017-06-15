@@ -1,7 +1,8 @@
 //index.js
 //获取应用实例
 let app = getApp()
-let rpn = require('../../utils/rpn.js');
+import rpn from '../../utils/rpn.js'
+
 Page({
   data: {
     result: 0,
@@ -17,7 +18,6 @@ Page({
         result: 0,
         formula: ''
       })
-
       return
     }
 
@@ -27,16 +27,35 @@ Page({
         this.setData({
           formula: this.data.formula.slice(0, -3)
         })
-
         return
       }
+
       this.setData({
         formula: this.data.formula.slice(0, -1)
       })
-
       return
     }
 
+    // 等号
+    if (val === '=') {
+      // console.log(this.data.formula)
+      // 空直接赋值为0
+      if (this.data.formula === '') {
+        this.setData({
+          result: 0
+        })
+        return
+      }
+
+      // 计算结果
+      let result = rpn.calCommonExp(this.data.formula.replace(/\s/g, ''))
+      this.setData({
+        result: result
+      })
+      return
+    }
+
+    // 设置表达式的值
     let _val
     // console.log(Number(val))
     if (isNaN(Number(val))) {
@@ -51,42 +70,8 @@ Page({
     }
 
     let _formula = this.data.formula + _val
-
-    if (val === '=') {
-      // console.log(this.data.formula)
-      // 空直接赋值为0
-      if (this.data.formula === '') {
-        this.setData({
-          result: 0
-        })
-
-        return
-      }
-
-      console.log(this.data.formula.replace(/\s/g, ''))
-      let result = rpn.calCommonExp(this.data.formula.replace(/\s/g, ''))
-      this.setData({
-        result: result
-      })
-      return;
-    }
-
     this.setData({
       formula: _formula
     })
-  },
-  getResult (str) {
-    console.log(window)
-    let arr = str.split(' ')
-    // console.log(arr)
-    for(let [key, item] of arr.entries()) {
-      console.log(key + ':' + item)
-      
-    }
-    return str
-  },
-  evil(str) {
-    var _str = 'return ' + str
-    return new Function(_str)()
   }
 })
