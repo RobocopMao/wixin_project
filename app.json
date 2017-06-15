@@ -1,0 +1,11 @@
+{
+  "pages":[
+    "pages/calc/calc"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "Simple Calculator",
+    "navigationBarTextStyle":"white"
+  }
+}

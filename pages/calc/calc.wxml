@@ -1,0 +1,78 @@
+<!--index.wxml-->
+<view class="container cal-wrapper">
+  <view class="cal-screen">
+    <view class="cal-result-wrapper">
+        <!--<text class="cal-result">{{result}}</text>-->
+        <textarea class="cal-result" value="{{result}}" disabled></textarea>
+    </view>
+    <view class="cal-formula-wrapper">
+        <textarea class="cal-formula" value="{{formula}}" disabled></textarea>
+    </view>
+  </view>
+  <view class="cal-keyboard">
+    <view class="cal-number">
+      <view class="cal-number-btn">
+        <button type="default" data-num="C" bindtouchend="touchEnd">C</button>
+      </view>
+      <view class="cal-number-btn">
+        <button type="default" data-num="(" bindtouchend="touchEnd">(</button>
+      </view>
+      <view class="cal-number-btn">
+        <button type="default" data-num=")" bindtouchend="touchEnd">)</button>
+      </view>
+      <view class="cal-number-btn">
+        <button type="default" data-num="9" bindtouchend="touchEnd">9</button>
+      </view>
+      <view class="cal-number-btn">
+        <button type="default" data-num="8" bindtouchend="touchEnd">8</button>
+      </view>
+      <view class="cal-number-btn">
+        <button type="default" data-num="7" bindtouchend="touchEnd">7</button>
+      </view>
+      <view class="cal-number-btn">
+        <button type="default" data-num="6" bindtouchend="touchEnd">6</button>
+      </view>
+      <view class="cal-number-btn">
+        <button type="default" data-num="5" bindtouchend="touchEnd">5</button>
+      </view>
+      <view class="cal-number-btn">
+        <button type="default" data-num="4" bindtouchend="touchEnd">4</button>
+      </view>
+      <view class="cal-number-btn">
+        <button type="default" data-num="3" bindtouchend="touchEnd">3</button>
+      </view>
+      <view class="cal-number-btn">
+        <button type="default" data-num="2" bindtouchend="touchEnd">2</button>
+      </view>
+      <view class="cal-number-btn">
+        <button type="default" data-num="1" bindtouchend="touchEnd">1</button>
+      </view>
+      <view class="cal-number-btn">
+        <button type="default" data-num="Del" bindtouchend="touchEnd">Del</button>
+      </view>
+      <view class="cal-number-btn">
+        <button type="default" data-num="0" bindtouchend="touchEnd">0</button>
+      </view>
+      <view class="cal-number-btn">
+        <button type="default" data-num="." bindtouchend="touchEnd">.</button>
+      </view>
+    </view>
+    <view class="cal-deal">
+      <view class="cal-deal-btn">
+        <button type="default" data-num="/" bindtouchend="touchEnd">/</button>
+      </view>
+      <view class="cal-deal-btn">
+        <button type="default" data-num="*" bindtouchend="touchEnd">*</button>
+      </view>
+      <view class="cal-deal-btn">
+        <button type="default" data-num="+" bindtouchend="touchEnd">+</button>
+      </view>
+      <view class="cal-deal-btn">
+        <button type="default" data-num="-" bindtouchend="touchEnd">-</button>
+      </view>
+      <view class="cal-deal-btn">
+        <button type="default" data-num="=" bindtouchend="touchEnd">=</button>
+      </view>
+    </view>
+  </view>
+</view>
