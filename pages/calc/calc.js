@@ -50,6 +50,21 @@ Page({
 
       // 计算结果
       let result = rpn.calCommonExp(this.data.formula.replace(/\s/g, ''))
+      // 分母或除数不能为0的提示
+      if (String(result) === 'Infinity') {
+        this.setData({
+          result: '分母或除数不能为0'
+        })
+        return
+      }
+      // 输入公式必须正确（目前格式必须严格）
+      if (String(result) === 'NaN') {
+        this.setData({
+          result: '输入公式错误'
+        })
+        return
+      }
+      // 正常情况的结果显示
       this.setData({
         result: result
       })
