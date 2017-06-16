@@ -6,7 +6,7 @@
         <textarea class="cal-result" value="{{result}}" disabled></textarea>
     </view>
     <view class="cal-formula-wrapper">
-        <textarea class="cal-formula" value="{{formula}}" disabled></textarea>
+        <textarea class="cal-formula" value="{{formula}}" maxlength="-1" disabled></textarea>
     </view>
   </view>
   <view class="cal-keyboard">
