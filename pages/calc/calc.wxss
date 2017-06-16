@@ -13,14 +13,14 @@
 .cal-result-wrapper {
   text-align: right;
   line-height: 100rpx;
-  font-size: 50rpx;
   font-weight: bold;
 }
 .cal-result {
   padding-top: 20rpx;
   width: 100%;
-  color: #333;
   height: 140rpx;
+  color: #333;
+  font-size: 60rpx;
 }
 .cal-formula-wrapper {
   display: flex;
@@ -31,6 +31,7 @@
   width: 100%;
   height: auto;
   color: #999;
+  font-size: 48rpx;
 }
 .cal-keyboard {
   display: flex;
