@@ -49,7 +49,7 @@ Page({
       }
 
       // 计算结果
-      let result = rpn.calCommonExp(this.data.formula.replace(/\s/g, ''))
+      let result = rpn.calCommonExp(this.data.formula.replace(/\s/g, '').replace(/×/g, '*').replace(/÷/g, '/').replace(/＋/g, '+').replace(/－/g, '-'))
       // 分母或除数不能为0的提示
       if (String(result) === 'Infinity') {
         this.setData({

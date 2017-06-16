@@ -59,16 +59,16 @@
     </view>
     <view class="cal-deal">
       <view class="cal-deal-btn">
-        <button type="default" data-num="/" bindtouchend="touchEnd">/</button>
+        <button type="default" data-num="÷" bindtouchend="touchEnd">÷</button>
       </view>
       <view class="cal-deal-btn">
-        <button type="default" data-num="*" bindtouchend="touchEnd">*</button>
+        <button type="default" data-num="×" bindtouchend="touchEnd">×</button>
       </view>
       <view class="cal-deal-btn">
-        <button type="default" data-num="+" bindtouchend="touchEnd">+</button>
+        <button type="default" data-num="＋" bindtouchend="touchEnd">＋</button>
       </view>
       <view class="cal-deal-btn">
-        <button type="default" data-num="-" bindtouchend="touchEnd">-</button>
+        <button type="default" data-num="－" bindtouchend="touchEnd">－</button>
       </view>
       <view class="cal-deal-btn">
         <button type="default" data-num="=" bindtouchend="touchEnd">=</button>
